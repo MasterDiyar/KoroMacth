@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cssvburjoia6w"]
+
+[ext_resource type="PackedScene" uid="uid://0ws4limcjxj7" path="res://scenes/cards/gruncard.tscn" id="1_5hv7u"]
+[ext_resource type="Texture2D" uid="uid://b3ahy7b78d68k" path="res://cards/farmland.png" id="2_0hpp8"]
+
+[node name="farmland" instance=ExtResource("1_5hv7u")]
+
+[node name="draw" parent="colorcard" index="0"]
+position = Vector2(0, -22)
+texture = ExtResource("2_0hpp8")
+
+[node name="name" parent="colorcard" index="1"]
+text = "Farmland"
+
+[node name="cost" parent="colorcard" index="2"]
+text = "1"
+
+[node name="info" parent="colorcard" index="3"]
+text = "gives 1 money"

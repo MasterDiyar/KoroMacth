@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://0ws4limcjxj7"]
+
+[ext_resource type="PackedScene" uid="uid://bqc4wsshhv52f" path="res://scenes/cards/card.tscn" id="1_ksffi"]
+[ext_resource type="Texture2D" uid="uid://bqbu7vj2iayg8" path="res://cards/grun.png" id="2_ukrbk"]
+
+[node name="gruncard" instance=ExtResource("1_ksffi")]
+texture_filter = 3
+
+[node name="colorcard" parent="." index="1"]
+texture = ExtResource("2_ukrbk")
+
+[node name="name" parent="colorcard" index="1"]
+offset_left = -71.0
+offset_top = -144.0
+offset_right = 71.0
+offset_bottom = -121.0
+
+[node name="cost" parent="colorcard" index="2"]
+offset_left = -20.0
+offset_top = -173.0
+offset_right = 20.0
+offset_bottom = -150.0
+
+[node name="info" parent="colorcard" index="3"]
+offset_left = -94.0
+offset_top = 85.0
+offset_right = 94.0
+offset_bottom = 175.0

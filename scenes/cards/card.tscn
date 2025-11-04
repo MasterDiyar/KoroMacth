@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqc4wsshhv52f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qvr0u"]
+size = Vector2(200, 360)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qvr0u"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_45qsb"]
+font_color = Color(0.92156863, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0qqw3"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="card" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_qvr0u")
+
+[node name="colorcard" type="Sprite2D" parent="."]
+
+[node name="draw" type="Sprite2D" parent="colorcard"]
+
+[node name="name" type="Label" parent="colorcard"]
+offset_right = 40.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_qvr0u")
+horizontal_alignment = 1
+
+[node name="cost" type="Label" parent="colorcard"]
+offset_right = 40.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_45qsb")
+horizontal_alignment = 1
+
+[node name="info" type="Label" parent="colorcard"]
+offset_right = 40.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_0qqw3")
+horizontal_alignment = 1
