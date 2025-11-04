@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cssvburjoia6w"]
+[gd_scene load_steps=4 format=3 uid="uid://cssvburjoia6w"]
 
 [ext_resource type="PackedScene" uid="uid://0ws4limcjxj7" path="res://scenes/cards/gruncard.tscn" id="1_5hv7u"]
 [ext_resource type="Texture2D" uid="uid://b3ahy7b78d68k" path="res://cards/farmland.png" id="2_0hpp8"]
+[ext_resource type="Script" uid="uid://itmqtqy7lc2m" path="res://scripts/Farmland.cs" id="2_e2npu"]
 
 [node name="farmland" instance=ExtResource("1_5hv7u")]
+script = ExtResource("2_e2npu")
 
 [node name="draw" parent="colorcard" index="0"]
 position = Vector2(0, -22)
