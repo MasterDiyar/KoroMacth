@@ -1,8 +1,4 @@
 namespace machicoro.scripts;
 
 
-public partial class GreenCard : Card
-{
-    
-    
-}
+public partial class GreenCard : Card { }

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://drpl163x5de84"]
+
+[ext_resource type="PackedScene" uid="uid://0ws4limcjxj7" path="res://scenes/cards/gruncard.tscn" id="1_2biu4"]
+[ext_resource type="Texture2D" uid="uid://qpgu8mqqk0uy" path="res://cards/mill.png" id="2_1kp6e"]
+[ext_resource type="Script" uid="uid://drfojahylpi64" path="res://scripts/Mill.cs" id="2_crcqv"]
+
+[node name="mill" instance=ExtResource("1_2biu4")]
+script = ExtResource("2_crcqv")
+
+[node name="draw" parent="colorcard" index="0"]
+texture = ExtResource("2_1kp6e")
+
+[node name="name" parent="colorcard" index="1"]
+text = "mill"
+
+[node name="cost" parent="colorcard" index="2"]
+text = "3"
+
+[node name="info" parent="colorcard" index="3"]
+text = "foreach farmland 1
+money"

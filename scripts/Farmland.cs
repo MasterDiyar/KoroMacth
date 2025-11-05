@@ -4,7 +4,6 @@ using machicoro.scripts;
 
 public partial class Farmland : GreenCard
 {
-	public int[] NumberArr = [1, 2];
-	public int Output = 1;
-	
+	public override int[] NumberArr { get; set; } = [1, 2];
+	public override int Output { get; set; } = 1;
 }

@@ -1,6 +1,14 @@
-[gd_scene format=3 uid="uid://ols7amjvnjq"]
+[gd_scene load_steps=2 format=3 uid="uid://ols7amjvnjq"]
 
-[node name="Game" type="Node2D"]
+[ext_resource type="Script" uid="uid://dexdixbdk1bhu" path="res://scenes/Game.cs" id="1_uwrxv"]
+
+[node name="Game" type="Node2D" node_paths=PackedStringArray("card", "roll", "spawnNode", "outputL", "moneyL")]
+script = ExtResource("1_uwrxv")
+card = NodePath("addfarm")
+roll = NodePath("roll")
+spawnNode = NodePath("cards")
+outputL = NodePath("output")
+moneyL = NodePath("money")
 
 [node name="addfarm" type="Button" parent="."]
 offset_left = 90.0
@@ -9,11 +17,25 @@ offset_right = 98.0
 offset_bottom = 263.0
 text = "add farm"
 
-[node name="Button" type="Button" parent="."]
+[node name="roll" type="Button" parent="."]
 offset_left = 203.0
 offset_top = 255.0
 offset_right = 211.0
 offset_bottom = 263.0
+text = "roll"
 
 [node name="cards" type="Node2D" parent="."]
-position = Vector2(352.96024, 83.16246)
+position = Vector2(250.20483, 552.38196)
+scale = Vector2(0.6, 0.6)
+
+[node name="output" type="Label" parent="."]
+offset_left = 219.375
+offset_top = 27.409637
+offset_right = 259.375
+offset_bottom = 50.409637
+
+[node name="money" type="Label" parent="."]
+offset_left = 19.174957
+offset_top = 73.60965
+offset_right = 59.174957
+offset_bottom = 96.60965
